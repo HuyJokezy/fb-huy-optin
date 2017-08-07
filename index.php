@@ -40,8 +40,8 @@ function confirmOptIn() {
     FB.AppEvents.logEvent('MessengerCheckboxUserConfirmation', null, {
         'app_id':'443404942707731',
         'page_id':'505746129766933',
-        'ref':'dms-optin',
-        'user_ref':'<?=$random_val?>'
+        'ref':'dmsOptin',
+        'user_ref':'1111'
     });
 }
 </script>      
@@ -49,6 +49,7 @@ function confirmOptIn() {
 </head>
 <body>
 <p>Optin Here</p>
+<?php $random_val=rand(100000,999999);?>
   <div class="fb-messenger-checkbox"
 origin=https://fb-huy-optin.herokuapp.com/ 
 page_id=505746129766933 
@@ -63,5 +64,5 @@ size="large"> </div>
 </body>
 </html>
 
-<?php $random_val=rand(100000,999999);?>
+
 
