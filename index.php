@@ -38,12 +38,12 @@ window.fbAsyncInit = function() {
 
 function confirmOptIn() {
     console.log('Start')
-    console.log(document.getElementsByClassName("fb-messenger-checkbox"));
+    console.log(document.getElementsByClassName("fb-messenger-checkbox")[0].getAttribute("user_ref"));
     FB.AppEvents.logEvent('MessengerCheckboxUserConfirmation', null, {
         'app_id':'443404942707731',
         'page_id':'505746129766933',
         'ref':'dmsOptin',
-        'user_ref':document.getElementsByClassName("fb-messenger-checkbox")
+        'user_ref':document.getElementsByClassName("fb-messenger-checkbox")[0].getAttribute("user_ref")
     });
     console.log('End')
 }
