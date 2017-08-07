@@ -40,7 +40,7 @@ function confirmOptIn() {
     FB.AppEvents.logEvent('MessengerCheckboxUserConfirmation', null, {
         'app_id':'443404942707731',
         'page_id':'505746129766933',
-        'ref':'shopping-cart-company',
+        'ref':'dms-optin',
         'user_ref':'<?=$random_val?>'
     });
 }
@@ -48,6 +48,7 @@ function confirmOptIn() {
 
 </head>
 <body>
+<p>Optin Here</p>
   <div class="fb-messenger-checkbox"
 origin=https://stablevehiclecontracts.co.uk/checkbox3.php 
 page_id=505746129766933 
@@ -56,6 +57,9 @@ user_ref="<?=$random_val?>"
 prechecked="true" 
 allow_login="true" 
 size="large"> </div>
+<body>
+    <input type="button" onclick="confirmOptIn()" value="Confirm Opt-in"/>
+</body>
 </body>
 </html>
 
