@@ -41,7 +41,7 @@ function confirmOptIn() {
         'app_id':'443404942707731',
         'page_id':'505746129766933',
         'ref':'dmsOptin',
-        'user_ref':'1111'
+        'user_ref':'<?=$random_val?>'
     });
 }
 </script>      
