@@ -50,7 +50,7 @@ function confirmOptIn() {
 <body>
 <p>Optin Here</p>
   <div class="fb-messenger-checkbox"
-origin=https://stablevehiclecontracts.co.uk/checkbox3.php 
+origin=https://fb-huy-optin.herokuapp.com/ 
 page_id=505746129766933 
 messenger_app_id=443404942707731 
 user_ref="<?=$random_val?>" 
