@@ -53,7 +53,7 @@ function confirmOptIn() {
 <body>
     <p>Optin Here</p>
     <div class="fb-messenger-checkbox"
-        origin="https://fb-huy-optin.herokuapp.com/" 
+        origin="https://fb-optin-test.herokuapp.com/" 
         page_id="505746129766933 "
         messenger_app_id="443404942707731" 
         user_ref="optinMessage" 
