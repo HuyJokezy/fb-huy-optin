@@ -51,17 +51,17 @@ function confirmOptIn() {
 
 </head>
 <body>
-    <p style="border-bottom: 1px solid black;">Optin Here</p>
-    <div class="fb-messenger-checkbox"
-        origin="https://fb-optin-test.herokuapp.com/" 
-        page_id="1789356631078933"
-        messenger_app_id="443404942707731" 
-        user_ref="optinMessage" 
-        prechecked="true"
-        allow_login="true" 
-        size="large"> 
+    <p>Optin Here</p>
+    <div class="fb-messenger-checkbox" 
+    origin="https://fb-optin-test.herokuapp.com/" 
+    page_id="1789356631078933" 
+    messenger_app_id="443404942707731" 
+    user_ref="optinMessage" 
+    prechecked="true" 
+    allow_login="true" 
+    size="large">
     </div>
-    <div style="border-top: 1px solid black;"><input type="button" onclick="confirmOptIn()" value="Confirm Opt-in"/></div>
+    <div><input type="button" onclick="confirmOptIn()" value="Confirm Opt-in"/></div>
 <body>
 </html>
 
