@@ -51,7 +51,7 @@ function confirmOptIn() {
 
 </head>
 <body>
-    <p>Optin random Here</p>
+    <p>Optin static Here</p>
     <div class="fb-messenger-checkbox" 
     origin="https://fb-optin-test.herokuapp.com/" 
     page_id=1789356631078933 
@@ -62,7 +62,6 @@ function confirmOptIn() {
     size="large">
     </div><br>
     <input type="button" onclick="confirmOptIn()" value="Confirm Opt-in"/>
-    <a href="/static.php">Static optin</a>
 <body>
 </html>
 
