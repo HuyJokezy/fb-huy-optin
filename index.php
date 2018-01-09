@@ -61,7 +61,7 @@ function confirmOptIn() {
     element.setAttribute('class', 'fb-messenger-checkbox');
     element.setAttribute('origin', 'https://fb-optin-test.herokuapp.com/');
     element.setAttribute('page_id', '1789356631078933');
-    element.setAttribute('messenger_app_id', '443404942707731';
+    element.setAttribute('messenger_app_id', '443404942707731');
     element.setAttribute('user_ref', new Date().getTime().toString());
     element.setAttribute('prechecked', "true");
     element.setAttribute('allow_login', "true");
