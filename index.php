@@ -47,24 +47,22 @@ function confirmOptIn() {
     });
     console.log('End')
 }
+var element = document.createElement('div');
+element.attributes.class = 'fb-messenger-checkbox';
+element.attributes.origin = 'https://fb-optin-test.herokuapp.com/';
+element.attributes.page_id = '1789356631078933';
+element.attributes.messenger_app_id = '443404942707731';
+element.attributes.user_ref = new Date().getTime().toString();
+element.attributes.prechecked = "true";
+element.attributes.allow_login = "true";
+element.attributes.size = "large";
+document.getElementById('optin').appendChild(element);
+
 </script>      
 
 </head>
 <body>
-    <?php
-        $x = rand(0,100000);
-        echo($x);
-    ?>
-    <p>Optin random Here</p>
-    <div class="fb-messenger-checkbox" 
-    origin="https://fb-optin-test.herokuapp.com/" 
-    page_id=1789356631078933 
-    messenger_app_id=443404942707731 
-    user_ref="<?php echo htmlspecialchars($x); ?>" 
-    prechecked="true" 
-    allow_login="true" 
-    size="large">
-    </div><br>
+    <p id="optin">Optin random Here</p>
     <input type="button" onclick="confirmOptIn()" value="Confirm Opt-in"/>
     <a href="/static.php">Static optin</a>
 <body>
