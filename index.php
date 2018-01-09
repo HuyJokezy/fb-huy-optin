@@ -52,7 +52,8 @@ function confirmOptIn() {
 
 </head>
 <body>
-    <p id="optin">Optin random Here</p>
+    <p>Optin random Here</p>
+    <div id="optin"></div>
     <input type="button" onclick="confirmOptIn()" value="Confirm Opt-in"/>
     <a href="/static.php">Static optin</a>
 <body>

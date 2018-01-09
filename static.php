@@ -56,7 +56,7 @@ function confirmOptIn() {
     origin="https://fb-optin-test.herokuapp.com/" 
     page_id=1789356631078933 
     messenger_app_id=443404942707731 
-    user_ref="static" 
+    user_ref="1515485655654" 
     prechecked="true" 
     allow_login="true" 
     size="large">
