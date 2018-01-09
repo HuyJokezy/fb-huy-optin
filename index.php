@@ -51,7 +51,7 @@ function confirmOptIn() {
 
 </head>
 <body>
-    <p style="border-bottom: 1px solid black">Optin Here</p>
+    <p style="border-bottom: 1px solid black;">Optin Here</p>
     <div class="fb-messenger-checkbox"
         origin="https://fb-optin-test.herokuapp.com/" 
         page_id="1789356631078933"
@@ -61,7 +61,7 @@ function confirmOptIn() {
         allow_login="true" 
         size="large"> 
     </div>
-    <div style="border-top: 1px solid black"><input type="button" onclick="confirmOptIn()" value="Confirm Opt-in"/></div>
+    <div style="border-top: 1px solid black;"><input type="button" onclick="confirmOptIn()" value="Confirm Opt-in"/></div>
 <body>
 </html>
 
