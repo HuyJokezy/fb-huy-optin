@@ -7,7 +7,7 @@ window.fbAsyncInit = function() {
     FB.init({
         appId      : '443404942707731',
         xfbml      : true,
-        version    : 'v2.6'
+        version    : 'v2.11'
     });
 
     FB.Event.subscribe('messenger_checkbox', function(e) {
@@ -41,8 +41,8 @@ function confirmOptIn() {
     console.log(document.getElementsByClassName("fb-messenger-checkbox")[0].getAttribute("user_ref"));
     FB.AppEvents.logEvent('MessengerCheckboxUserConfirmation', null, {
         'app_id':'443404942707731',
-        'page_id':'505746129766933',
-        'ref':'dmsOptin',
+        'page_id':'1789356631078933',
+        'ref':'optinMessage',
         'user_ref':document.getElementsByClassName("fb-messenger-checkbox")[0].getAttribute("user_ref")
     });
     console.log('End')
@@ -51,20 +51,18 @@ function confirmOptIn() {
 
 </head>
 <body>
-<p>Optin Here</p>
-<?php $random_val=rand(100000,999999);?>
-  <div class="fb-messenger-checkbox"
-origin=https://fb-huy-optin.herokuapp.com/ 
-page_id=505746129766933 
-messenger_app_id=443404942707731 
-user_ref="<?=$random_val?>" 
-prechecked="true" 
-allow_login="true" 
-size="large"> </div>
-<body>
+    <p>Optin Here</p>
+    <div class="fb-messenger-checkbox"
+        origin="https://fb-huy-optin.herokuapp.com/" 
+        page_id="505746129766933 "
+        messenger_app_id="443404942707731" 
+        user_ref="optinMessage" 
+        prechecked="true" 
+        allow_login="true" 
+        size="large"> 
+    </div>
     <input type="button" onclick="confirmOptIn()" value="Confirm Opt-in"/>
-</body>
-</body>
+<body>
 </html>
 
 
