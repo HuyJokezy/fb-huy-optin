@@ -51,16 +51,12 @@ function confirmOptIn() {
 
 </head>
 <body>
-    <?php
-        $x = rand(0,100000);
-        echo($x);
-    ?>
     <p>Optin random Here</p>
     <div class="fb-messenger-checkbox" 
     origin="https://fb-optin-test.herokuapp.com/" 
     page_id=1789356631078933 
     messenger_app_id=443404942707731 
-    user_ref="<?php echo htmlspecialchars($x); ?>" 
+    user_ref="test" 
     prechecked="true" 
     allow_login="true" 
     size="large">
