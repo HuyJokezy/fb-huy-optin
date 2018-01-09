@@ -58,14 +58,14 @@ function confirmOptIn() {
 <body>
 <script>
     var element = document.createElement('div');
-    element.attributes.class = 'fb-messenger-checkbox';
-    element.attributes.origin = 'https://fb-optin-test.herokuapp.com/';
-    element.attributes.page_id = '1789356631078933';
-    element.attributes.messenger_app_id = '443404942707731';
-    element.attributes.user_ref = new Date().getTime().toString();
-    element.attributes.prechecked = "true";
-    element.attributes.allow_login = "true";
-    element.attributes.size = "large";
+    element.setAttribute('class', 'fb-messenger-checkbox');
+    element.setAttribute('origin', 'https://fb-optin-test.herokuapp.com/');
+    element.setAttribute('page_id', '1789356631078933');
+    element.setAttribute('messenger_app_id', '443404942707731';
+    element.setAttribute('user_ref', new Date().getTime().toString());
+    element.setAttribute('prechecked', "true");
+    element.setAttribute('allow_login', "true");
+    element.setAttribute('size', "large");
     document.getElementById('optin').appendChild(element);
 </script>
 </html>
