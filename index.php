@@ -67,6 +67,7 @@ function confirmOptIn() {
     element.setAttribute('prechecked', "true");
     element.setAttribute('allow_login', "true");
     element.setAttribute('size', "large");
+    console.log(element);
     document.getElementById('optin').appendChild(element);
 </script>
 </html>
