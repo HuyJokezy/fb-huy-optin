@@ -27,12 +27,14 @@
   chatPlugin.setAttribute('logged_in_greeting', 'Hello logged_in');
   chatPlugin.setAttribute('logged_out_greeting', 'Hello logged_out');
   document.body.appendChild(chatPlugin);`;
+  var isScriptLoad = false;
   var loadScript = function (script) {
-    if (document.body) {
+    if (document.body !== undefined) {
       document.body.appendChild(script);
+      isScriptLoad = true;
     }
   }
-  while (!document.body) {
+  while (!isScriptLoad) {
     loadScript(script);
   }
 
