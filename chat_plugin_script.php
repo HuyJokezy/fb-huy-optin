@@ -29,7 +29,7 @@
   document.body.appendChild(chatPlugin);`;
   var isScriptLoad = false;
   var loadScript = function (script) {
-    if (document.body !== undefined) {
+    if (document.body !== undefined && document.body !== null) {
       document.body.appendChild(script);
       isScriptLoad = true;
     }
