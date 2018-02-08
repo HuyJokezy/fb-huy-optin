@@ -19,12 +19,20 @@ window.fbAsyncInit = function() {
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk')
 );
+var script = document.createElement('script');
+  script.innerHTML = `var chatPlugin = document.createElement('div');
+  chatPlugin.setAttribute('class', 'fb-customerchat');
+  chatPlugin.setAttribute('page_id', '1789356631078933');
+  chatPlugin.setAttribute('ref', '${new Date().getTime().toString()}');
+  chatPlugin.setAttribute('logged_in_greeting', 'Hello logged_in');
+  chatPlugin.setAttribute('logged_out_greeting', 'Hello logged_out');
+  document.body.appendChild(chatPlugin);`;
+  document.body.appendChild(script);
 </script>      
 
 </head>
 <body>
-<body>
-<script>
+  <!-- <script>
   var chatPlugin = document.createElement('div');
   chatPlugin.setAttribute('class', 'fb-customerchat');
   chatPlugin.setAttribute('page_id', '1789356631078933');
@@ -32,7 +40,8 @@ window.fbAsyncInit = function() {
   chatPlugin.setAttribute('logged_in_greeting', 'Hello logged_in');
   chatPlugin.setAttribute('logged_out_greeting', 'Hello logged_out');
   document.body.appendChild(chatPlugin);
-</script>
+  </script> -->
+<body>
 </html>
 
 
