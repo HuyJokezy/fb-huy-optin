@@ -34,14 +34,15 @@
       isScriptLoad = true;
     }
   }
-  while (!isScriptLoad) {
-    loadScript(script);
-  }
 
 </script>      
-
 </head>
 <body>
+  <script>
+    while (!isScriptLoad) {
+      loadScript(script);
+    }
+  </script>
   <!-- <script>
   var chatPlugin = document.createElement('div');
   chatPlugin.setAttribute('class', 'fb-customerchat');
