@@ -52,15 +52,12 @@ function confirmOptIn() {
 
 </head>
 <body>
+    <a href="/static.php">Static optin</a>
+    <a href="/chat_plugin_preload.php">Chat plugin preload</a>
+    <a href="/chat_plugin_script.php">Chat plugin script</a>
     <p>Optin random Here</p>
     <div id="optin"></div>
-    <input type="button" onclick="confirmOptIn()" value="Confirm Opt-in"/>
-    <a href="/static.php">Static optin</a>
-
-    <div class="fb-customerchat" page_id="1789356631078933" ref="cloud9" theme_color="#800020"
-    logged_in_greeting="Hello logged_in user"
-    logged_out_greeting="Hello logged_out user">>
-    </div>
+    <input type="button" onclick="confirmOptIn()" value="Confirm Opt-in"/>   
 <body>
 <script>
     var element = document.createElement('div');
