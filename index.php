@@ -2,6 +2,7 @@
 <html>
 <head>
     <title></title>
+    <script src="//widget.manychat.com/1731976853769791.js" async="async"></script>
     <script>
 window.fbAsyncInit = function() {
     FB.init({
